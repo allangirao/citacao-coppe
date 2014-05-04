@@ -76,7 +76,7 @@
     	  </name>
 	</names>
   </macro>
-  <macro name="responsability">
+  <macro name="responsibility">
     <choose>
       <if variable="author editor translator container-title title" match="any">
         <choose>
@@ -135,7 +135,7 @@
       </name>
     </names>
   </macro>
-  <macro name="container-responsability">
+  <macro name="container-responsibility">
     <choose>
       <if variable="container-author editor translator" match="any">
         <choose>
@@ -175,7 +175,7 @@
 	  <else-if type="webpage" match="any">
 	   <choose>
           <if variable="container-author editor translator" match="any">
-            <text macro="container-responsability"/>
+            <text macro="container-responsibility"/>
             <choose>
               <if variable="container-title event" match="any">
                 <text value=", "/>
@@ -194,7 +194,7 @@
     	<text term="in" text-case="capitalize-first" suffix=": "/>
         <choose>
           <if variable="container-author editor translator" match="any">
-            <text macro="container-responsability"/>
+            <text macro="container-responsibility"/>
             <choose>
               <if variable="container-title event" match="any">
                 <text value=", "/>
@@ -399,7 +399,7 @@
   </citation>
   <bibliography>
     <sort>
-      <key macro="responsability"/>
+      <key macro="responsibility"/>
       <key macro="year-date"/>
       <key macro="title"/>
     </sort>
@@ -407,7 +407,7 @@
       <choose>
         <if type="book map" match="any">
           <group display="left-margin">
-            <text macro="responsability" suffix=", "/>
+            <text macro="responsibility" suffix=", "/>
             <text macro="year-date" suffix=", "/>
             <text macro="title" suffix=". "/>
             <text macro="genre" suffix=". "/>
@@ -421,7 +421,7 @@
         </if>
         <else-if type="article-journal article-magazine" match="any">
           <group display="left-margin">
-            <text macro="responsability" suffix=", "/>
+            <text macro="responsibility" suffix=", "/>
             <text macro="year-date" suffix=", "/>
             <text macro="title" suffix=". "/>
             <text macro="edition" suffix=". "/>
@@ -430,7 +430,7 @@
         </else-if>
         <else-if type="article-newspaper">
           <group display="left-margin">
-            <text macro="responsability" suffix=", "/>
+            <text macro="responsibility" suffix=", "/>
             <text macro="year-date" suffix=". "/>
             <text macro="title" suffix=". "/>
             <text macro="edition" suffix=". "/>
@@ -443,7 +443,7 @@
         </else-if>
         <else-if type="chapter entry entry-encyclopedia" match="any">
           <group display="left-margin">
-            <text macro="responsability" suffix=", "/>
+            <text macro="responsibility" suffix=", "/>
             <text macro="year-date" suffix=". "/>
             <text macro="title" suffix=". "/>
             <text macro="edition" suffix=". "/>
@@ -455,7 +455,7 @@
         </else-if>
 		<else-if type="entry-dictionary" match="any">
           <group display="left-margin">
-            <text macro="responsability" suffix=", "/>
+            <text macro="responsibility" suffix=", "/>
             <text macro="year-date" suffix=". "/>
             <text macro="title" suffix=". "/>
             <text macro="edition" suffix=". "/>
@@ -467,7 +467,7 @@
         </else-if>
         <else-if type="speech">
           <group display="left-margin">
-            <text macro="responsability" suffix=", "/>
+            <text macro="responsibility" suffix=", "/>
             <text macro="year-date" suffix=". "/>
             <text macro="title" suffix=". "/>
             <text macro="genre" suffix=". "/>
@@ -480,7 +480,7 @@
         </else-if>
         <else-if type="paper-conference">
           <group display="left-margin">
-            <text macro="responsability" suffix=", "/>
+            <text macro="responsibility" suffix=", "/>
             <text macro="year-date" suffix=". "/>
             <text macro="title" suffix=". "/>
             <text macro="genre" suffix=". "/>
@@ -492,7 +492,7 @@
         </else-if>
         <else-if type="thesis">
           <group display="left-margin">
-            <text macro="responsability" suffix=", "/>
+            <text macro="responsibility" suffix=", "/>
             <text macro="year-date" suffix=". "/>
             <text macro="title" suffix=". "/>
             <text macro="genre" suffix=". "/>
@@ -504,7 +504,7 @@
 			<choose>
 				<if variable="author">
 				  <group display="left-margin">
-					<text macro="responsability" suffix=", "/>
+					<text macro="responsibility" suffix=", "/>
 					<text macro="year-date" suffix=". "/>
 					<text macro="title" suffix=". "/>
 					<text macro="url" suffix=". "/>
@@ -513,7 +513,7 @@
 				</if>
 				<else>
 				  <group display="left-margin">
-					<text macro="responsability" suffix=", "/>
+					<text macro="responsibility" suffix=", "/>
 					<text macro="year-date" suffix=". "/>
 					<text variable="URL" suffix="."/>
 				  </group>
@@ -522,7 +522,7 @@
         </else-if>
         <else-if type="post-weblog post" match="any">
           <group display="left-margin">
-            <text macro="responsability" suffix=", "/>
+            <text macro="responsibility" suffix=", "/>
             <text macro="year-date" suffix=". "/>
             <text macro="title" suffix=". "/>
             <text macro="url" suffix=". "/>
@@ -531,7 +531,7 @@
         </else-if>
         <else-if type="broadcast motion_picture song" match="any">
           <group display="left-margin">
-            <text macro="responsability" suffix=", "/>
+            <text macro="responsibility" suffix=", "/>
             <text macro="year-date" suffix=". "/>
             <text macro="title" suffix=". "/>
             <text macro="medium" suffix=". "/>
@@ -545,7 +545,7 @@
         </else-if>
         <else-if type="report">
           <group display="left-margin">
-            <text macro="responsability" suffix=", "/>
+            <text macro="responsibility" suffix=", "/>
             <text macro="year-date" suffix=". "/>
             <text macro="title" suffix=". "/>
             <text macro="genre" suffix=". "/>
@@ -559,7 +559,7 @@
         </else-if>
         <else-if type="manuscript">
           <group display="left-margin">
-            <text macro="responsability" suffix=", "/>
+            <text macro="responsibility" suffix=", "/>
             <text macro="year-date" suffix=". "/>
             <text macro="title" suffix=". "/>
             <text macro="genre" suffix=". "/>
@@ -572,7 +572,7 @@
         </else-if>
         <else-if type="patent">
           <group display="left-margin">
-            <text macro="responsability" suffix=", "/>
+            <text macro="responsibility" suffix=", "/>
             <text macro="year-date" suffix=". "/>
             <text macro="title" suffix=". "/>
             <text macro="number" suffix=". "/>
@@ -585,7 +585,7 @@
         </else-if>
         <else>
           <group display="left-margin">
-            <text macro="responsability" suffix=", "/>
+            <text macro="responsibility" suffix=", "/>
             <text macro="year-date" suffix=". "/>
             <text macro="title" suffix=". "/>
             <text macro="medium" suffix=". "/>
