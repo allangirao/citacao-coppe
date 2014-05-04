@@ -120,7 +120,7 @@
 			<text variable="title" text-case="uppercase"/>
 	  </else-if>
 	  <else-if type="entry-dictionary" match="any">
-			<text variable="short-title" text-case="uppercase"/>
+			<text variable="title-short" text-case="uppercase"/>
 	  </else-if>
       <else>
         <text term="anonymous" text-case="uppercase"/>
